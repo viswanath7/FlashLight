@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <!--
+    Applications declare their components (i.e. the activities, services, broadcast receivers, and content providers) in a manifest file that is bundled into the Android package i.e. 
+    the .apk file that also holds the application's code, files, and resources. Every application must have an AndroidManifest.xml file (with precisely that name) in its root directory. 
+    
+    AndroidManifest.xml names the classes that implement each of its components and publishes their capabilities. These declarations enable the Android system identify the components of 
+    an application and the conditions under which they must be launched. It determines which processes will host application components.
+    
+    It also identifies the minimum level of Android API that the application requires. Apart from declaring the application's components, AndroidManifest.xml also does other things like 
+    naming any libraries the application needs to be linked against, identifying permissions to granted etc.
+  -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0"
+  package="biz.vj.android.application">
+  <!-- Java package for the application is named here. The package name serves as a unique identifier for the application.-->
+
+
+  <application android:icon="@drawable/icon" android:label="@string/app_name">
+
+    <activity android:name=".activity.RedFlashLight" android:label="@string/app_name">
+    <!-- 
+         The "name" attribute of the <activity> element names the Activity subclass that implements the activity. 
+         The "icon" and "label" attributes point to resource files containing an icon and label that can be displayed to users to represent the activity. 
+         The android:clearTaskOnLaunch="true" resets the application by clearing the activity's task, every time the user returns to the application. 
+    -->
+      <intent-filter>
+        <!--
+            This provides a top-level entry into the FlashLight application: the standard MAIN action is a main entry point (not requiring any other information in the Intent), 
+            and the LAUNCHER category says that this entry point should be listed in the application launcher. 
+
+            { action=android.app.action.MAIN } matches all of the activities that can be used as top-level entry points into an application.
+
+            { action=android.app.action.MAIN, category=android.app.category.LAUNCHER } is the actual intent used by the Launcher to populate its top-level list.
+            
+         -->
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      
+    </activity>
+    
+    <activity android:name=".activity.GreenFlashLight" android:label="@string/app_name"/>
+
+  </application>
+
+  <uses-sdk android:minSdkVersion="4" />
+
+</manifest> 

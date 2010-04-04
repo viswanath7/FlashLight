@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="menuItemQuit">Quit</string>
+    
+    <string name="menuItemAbout">About FlashLight</string>
+    <string name="red">Red flash-light</string>
+    <string name="green">Green flash-light</string>
+    <string name="app_name">FlashLight</string>
+<string name="dialogConfirmQuitMessage">Are you sure that you want to quit ?</string>
+
+<string name="dialogConfirmYes">Yes</string>
+<string name="dialogConfirmNo">No</string>
+<string name="dialogAboutTitle">About FlashLight</string>
+<string name="dialogAboutCredit">Credits - Viswanath Jayachandran</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="menuItemAbout">Over flitslicht</string>
+    <string name="red">Rood flitslicht</string>
+    <string name="green">Groene flitslicht</string>
+    <string name="app_name">Flitslicht</string>
+<string name="menuItemQuit">Quit</string>
+<string name="dialogConfirmQuitMessage">Weet u zeker dat u wilt afsluiten?</string>
+<string name="dialogConfirmYes">Ja</string>
+<string name="dialogConfirmNo">Nee</string>
+<string name="dialogAboutTitle">Over flitslicht</string>
+<string name="dialogAboutCredit">Tegoed : Viswanath Jayachandran</string>
+</resources>

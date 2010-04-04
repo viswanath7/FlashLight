@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+  Android provides a straightforward XML vocabulary that defines the layout structure and holds all the elements that appear to the user. UI elements declared in XML correspond to 
+  the View classes and subclasses. The advantage to declaring UI in XML is that it enables us to separate the presentation of application from the code that controls its behaviour.
+  
+  One can easily modify and adapt the xml representing the UI without modifying the source code and compiling it. It also facilitates us in easily visualising our structure of UI.
+  
+  Each layout file must contain exactly one root element, which must be a View/ViewGroup object. When the application is compiled, each XML layout file is compiled into a View resource.
+   
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:gravity="center" android:background="@color/red">
+    
+<!-- 
+  The parent view group contains property types that define the size and position for each child view, as appropriate for the view group.
+  XML layout attributes named layout_something define layout parameters for the View that are appropriate for the ViewGroup in which it resides.
+-->
+
+<!-- 
+  All view objects have an xml attribute 'id' for identifying it uniquely under the tree. Leading @ symbol indicates that the XML parser should parse and expand the rest of the 
+  ID string as an ID resource.The '+' symbol means that it's a new resource name that must be created and added to our resources in the R.java file. When referencing an Android 
+  resource ID, the android package namespace must be added. Example : android:id="@android:id/empty". With the android package namespace in place, we are now referencing an ID 
+  from the android.R resources class, rather than the local resources class.  
+  
+  Defining IDs for view objects is important when creating a RelativeLayout. In a relative layout, sibling views can define their layout relative to another sibling view, which 
+  is referenced by the unique ID.
+-->
+
+<!-- Definition of view/widget in the layout file. -->
+      
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/red" android:textColor="@color/midnightblue"/>
+    
+  <Button android:id="@+id/green_button"  android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/green"/>
+  
+</LinearLayout>
